@@ -13,7 +13,7 @@ server.listen(2)
 
 while True:
     client, addr = server.accept()
-    print("Got a connection from %s" % str(addr))
+    print("Connection recieved from %s" % str(addr))
     msg = "Thank you for connecting\r\n"
     client.send(msg.encode('ascii'))
     client.close()
